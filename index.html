@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programma di Sacha</title>
+  <style>
+  p .su {
+  color: red
+  }
+  p .giù {
+  color: green
+  }  
+  p .diverso {
+  color: purple
+  }   
+    
+    
+  </style>
+<head>
+  <body>
+    <h1  id="primo"></h1>
+    <h2  id="secondo"></h2>
+    <h3  id="terzo"></h3>
+ <p> Lo sport è il principale passatempo degli uomini, oltre ad essere un lavoro. Lo sport più praticato in Italia è il calcio.<br>Capita spesso che a livello agonistico, lo sport, risenta dell'andamento socio-economico della nazione.<br> Motivo che porta le statistiche a palesare, anche in campo sportivo, una netta <span class="diverso">differenza</span> tra lo stato socio-economico del <span class="su">settentrione</span> e quello del <span class="giù">meridione</span>).<br>
+
+Come si può notare dai vari campionati, nelle varie discipline dello sport italiano, il <span class="giù">pezzo più basso</span> del paese non è adeguatamente rappresentato come invece lo è il <span class="su">settentrione</span>.<br> Nel calcio, ad esempio, questa <span class="diverso">disuguaglianza</span> è evidente; come risulta dai numeri: su 63 squadre italiane che hanno partecipato alla Serie A, dalla sua nascita al 2013, ben 49 sono del <span class="su">setterione</span>.<br> Questa <span class="diverso">distanza</span> ha comportato un altro dato eloquente, ovvero su 109 scudetti solamente 3 sono stati vinti da squadre del <span class="giù">meridione</span> (Napoli e Cagliari).<br>
+<br>
+Questa <span class="diverso">differenza</span> deriva da fattori sociali ed economici. Una prima colpa è del programma politico sportivo nazionale, che non comprende voci integrative mirate a sviluppare la cultura dello sport in tutta la nazione.<br> Una seconda colpa è invece della politica sportiva a livello locale, la quale, come palesano i numeri, non dedica sufficienti attenzioni che la collochino a livelli eguali e competitivi con il resto del paese.<br><br>
+
+Si può affermare che non è ancora stato compiuto un vero programma sportivo che renda all'Italia tutte le sue potenzialità, poiché una parte del paese (quella del <span class="giù">meridione</span>) non è ancora stata messa in condizioni di esprimersi al meglio e di completare l'altra metà della nazione nel settore sport.
+    
+    
+    <script>
+     var titolo = document.getElementById("primo");
+    console.log(titolo);
+    titolo.style.backgroundColor = "blue";
+    titolo.style.textAlign = "center";
+    titolo.innerHTML = "Lo Sport";
+    
+    var sottotitolo = document.getElementById("secondo");
+    console.log(sottotitolo);
+    sottotitolo.style.textAlign ="center";
+    sottotitolo.style.backgroundColor = "yellow";
+    sottotitolo.innerHTML = "<em>In Italia: il calcio</em>";
+    
+    var catenaccio = document.getElementById("terzo");
+    console.log(catenaccio);
+    catenaccio.style.textAlign = "center";
+    catenaccio.innerHTML = "<strong>La disparità tra nord e sud</strong>";
+    
+  
+    
+    
+    var nord = document.querySelectorAll("p .su");
+    console.log(nord);
+    console.log(nord[0]);
+    for (var i=0; i < nord.length; i++) {
+    nord[i].innerHTML = "nord";
+    
+   }
+   
+   var sud = document.querySelectorAll("p .giù");
+   console.log(sud);
+   console.log(sud[0]);
+    for (var y=0; y < sud.length; y++) {
+    sud[y].innerHTML = "sud";
+    
+   }
+   
+    var strano = document.querySelectorAll("p .diverso"); 
+    console.log(strano);
+    console.log(strano[0]);
+    for (var x=0; x < strano.length; x++) {
+    strano[x].innerHTML = "disparità";
+    
+   }
+    
+    </script>
+   </body>
+</html>
